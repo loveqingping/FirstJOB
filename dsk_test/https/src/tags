@@ -1,0 +1,88 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.8	//
+APP	http_client.c	30;"	d	file:
+APP	http_client.c	44;"	d	file:
+BIN	Makefile	/^BIN=http_client$/;"	m
+CC	Makefile	/^CC=gcc$/;"	m
+DIP	http_client.c	34;"	d	file:
+DPORT	http_client.c	35;"	d	file:
+DST_MAC	http_client.c	32;"	d	file:
+H_IP	http_client.c	36;"	d	file:
+H_TCP	http_client.c	37;"	d	file:
+MSS	http_client.c	28;"	d	file:
+NET_DEVICE	http_client.c	29;"	d	file:
+OBJ	Makefile	/^OBJ=$(patsubst %.c, %.o, $(SRC))$/;"	m
+SIP	http_client.c	33;"	d	file:
+SRC	Makefile	/^SRC=$(wildcard *.c)$/;"	m
+SRC_MAC	http_client.c	31;"	d	file:
+TCP_ACK	http_client.c	42;"	d	file:
+TCP_FIN	http_client.c	38;"	d	file:
+TCP_PUSH	http_client.c	41;"	d	file:
+TCP_RST	http_client.c	40;"	d	file:
+TCP_SYN	http_client.c	39;"	d	file:
+TCP_URG	http_client.c	43;"	d	file:
+__CHECKSUM_H	checksum.h	3;"	d
+__MOG_PCAP__	pcap_dump.h	2;"	d
+__send_pkt_handle	http_client.c	/^typedef struct __send_pkt_handle$/;"	s	file:
+__write_pcap_handle_t	pcap_dump.h	/^typedef struct __write_pcap_handle_t$/;"	s
+_pkt_key	http_client.c	/^typedef struct _pkt_key$/;"	s	file:
+build_ether	http_client.c	/^int build_ether(char* pkt, char* dmac, char* smac, int type, int len)$/;"	f
+build_ipv4	http_client.c	/^int build_ipv4(char* p_ip, char* sip, char* dip, int protocol,int apd_len)$/;"	f
+build_l2_packet	http_client.c	/^int build_l2_packet(pkt_key_t* key, char* pkt, int buf_len,  char* apd, int apd_len, int* pkt_len,  uint8_t flags)$/;"	f
+build_tcp	http_client.c	/^int build_tcp(char* p_tcp, char* sip, char* dip, uint16_t dport, int8_t flags, char* apd, int apd_len)$/;"	f
+daddr	checksum.c	/^   	struct in6_addr saddr,daddr;$/;"	m	struct:psuedo_hdr6	typeref:struct:psuedo_hdr6::	file:
+daddr	checksum.c	/^  uint32_t daddr;      $/;"	m	struct:psuedo_hdr	file:
+daddr	http_client.c	/^    char daddr[16];$/;"	m	struct:_pkt_key	file:
+dev	http_client.c	/^    char dev[64];$/;"	m	struct:__send_pkt_handle	file:
+dmac	http_client.c	/^    char dmac[32];$/;"	m	struct:_pkt_key	file:
+dport	http_client.c	/^    uint16_t dport;$/;"	m	struct:_pkt_key	file:
+filename	pcap_dump.h	/^    char filename[256];$/;"	m	struct:__write_pcap_handle_t
+filter_exp	http_client.c	/^    char filter_exp[64];$/;"	m	struct:__send_pkt_handle	file:
+get_ack	http_client.c	/^static int get_ack(char* pkt)$/;"	f	file:
+get_ip_id	http_client.c	/^static int get_ip_id()$/;"	f	file:
+get_seq	http_client.c	/^static int get_seq(char* pkt)$/;"	f	file:
+get_src_port	http_client.c	/^static int get_src_port()$/;"	f	file:
+init_pcap_handle_line	pcap_dump.c	/^void init_pcap_handle_line(write_pcap_handle_t *wpcap_handle, char * filename)$/;"	f
+init_pkt_key	http_client.c	/^int init_pkt_key(pkt_key_t* key, char* saddr, char* daddr, char* smac, char* dmac, int16_t dport, uint16_t ether_type, uint8_t protocol)$/;"	f
+init_seq	http_client.c	/^static uint32_t init_seq()$/;"	f	file:
+ip_check_ext	checksum.c	/^uint16_t ip_check_ext(register uint16_t *addr, register int len, int addon)$/;"	f
+ip_compute_csum	checksum.c	/^uint16_t ip_compute_csum(uint16_t *addr, int len)$/;"	f
+ip_fast_csum	checksum.c	/^uint16_t ip_fast_csum(uint16_t *addr, int len)$/;"	f
+l3_protocol	http_client.c	/^    uint16_t l3_protocol;$/;"	m	struct:_pkt_key	file:
+len	checksum.c	/^    uint32_t len;$/;"	m	struct:psuedo_hdr6	file:
+len	checksum.c	/^  uint16_t len;        $/;"	m	struct:psuedo_hdr	file:
+mac_aton	http_client.c	/^static int mac_aton(char* mac_src,uint8_t* mac, int len)$/;"	f	file:
+main	http_client.c	/^int main(int argc, char* argv[])$/;"	f
+mask	http_client.c	/^    bpf_u_int32 mask;$/;"	m	struct:__send_pkt_handle	file:
+my_tcp6_check	checksum.c	/^uint16_t my_tcp6_check( char * tcph, uint32_t len,$/;"	f
+my_tcp_check	checksum.c	/^uint16_t my_tcp_check(char *th, int len, uint32_t saddr, uint32_t daddr)$/;"	f
+my_udp6_check	checksum.c	/^uint16_t my_udp6_check( char * udph, uint32_t len,$/;"	f
+my_udp_check	checksum.c	/^uint16_t my_udp_check(void *u, int len, uint32_t saddr, uint32_t daddr)$/;"	f
+net	http_client.c	/^    bpf_u_int32 net;$/;"	m	struct:__send_pkt_handle	file:
+pcap	pcap_dump.h	/^    pcap_t *pcap;$/;"	m	struct:__write_pcap_handle_t
+pcap_fp	pcap_dump.h	/^    pcap_dumper_t *pcap_fp;$/;"	m	struct:__write_pcap_handle_t
+pcap_header	pcap_dump.h	/^    struct pcap_file_header  pcap_header;$/;"	m	struct:__write_pcap_handle_t	typeref:struct:__write_pcap_handle_t::pcap_file_header
+pkt_key_t	http_client.c	/^}pkt_key_t;$/;"	t	typeref:struct:_pkt_key	file:
+pkthdr	pcap_dump.h	/^    struct pcap_pkthdr       pkthdr;$/;"	m	struct:__write_pcap_handle_t	typeref:struct:__write_pcap_handle_t::pcap_pkthdr
+print_mac	http_client.c	/^int print_mac(uint8_t* p_mac)$/;"	f
+private_ack	http_client.c	/^uint32_t private_ack = 0;$/;"	v
+private_seq	http_client.c	/^uint32_t private_seq = 0;     \/\/这两个变量用来跟踪seq 与 ack$/;"	v
+protocol	checksum.c	/^    uint8_t  protocol;$/;"	m	struct:psuedo_hdr6	file:
+protocol	checksum.c	/^  uint8_t protocol;    $/;"	m	struct:psuedo_hdr	file:
+psuedo_hdr	checksum.c	/^struct psuedo_hdr$/;"	s	file:
+psuedo_hdr6	checksum.c	/^struct psuedo_hdr6$/;"	s	file:
+saddr	checksum.c	/^   	struct in6_addr saddr,daddr;$/;"	m	struct:psuedo_hdr6	typeref:struct:psuedo_hdr6::in6_addr	file:
+saddr	checksum.c	/^  uint32_t saddr;      $/;"	m	struct:psuedo_hdr	file:
+saddr	http_client.c	/^    char saddr[16];$/;"	m	struct:_pkt_key	file:
+send_pkt_handle_t	http_client.c	/^}send_pkt_handle_t;$/;"	t	typeref:struct:__send_pkt_handle	file:
+smac	http_client.c	/^    char smac[32];$/;"	m	struct:_pkt_key	file:
+sp_handle	http_client.c	/^    pcap_t* sp_handle;$/;"	m	struct:__send_pkt_handle	file:
+trans_protocol	http_client.c	/^    int8_t trans_protocol;$/;"	m	struct:_pkt_key	file:
+write_pcap_data_line	pcap_dump.c	/^void write_pcap_data_line(write_pcap_handle_t *wpcap_handle, char * buff, int32_t len)$/;"	f
+write_pcap_handle_t	pcap_dump.h	/^}write_pcap_handle_t;$/;"	t	typeref:struct:__write_pcap_handle_t
+zero	checksum.c	/^    uint8_t  zero[3];$/;"	m	struct:psuedo_hdr6	file:
+zero	checksum.c	/^  uint8_t zero;        $/;"	m	struct:psuedo_hdr	file:

@@ -1,0 +1,22 @@
+<conf>
+	<keyword>
+		<keyword_id>300</keyword_id>
+		<keyword>atta</keyword>
+		<pz_id>10</pz_id>
+	</keyword>
+	<keyword>
+		<keyword_id>301</keyword_id>
+		<keyword>google</keyword>
+		<pz_id>10</pz_id>
+	</keyword>
+	<keyword>
+		<keyword_id>302</keyword_id>
+		<keyword>zhongguo</keyword>
+		<pz_id>20</pz_id>
+	</keyword>
+	<keyword>
+		<keyword_id>303</keyword_id>
+		<keyword>baidu</keyword>
+		<pz_id>30</pz_id>
+	</keyword>
+</conf>

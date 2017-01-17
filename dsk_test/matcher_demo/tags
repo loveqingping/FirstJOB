@@ -1,0 +1,51 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.8	//
+BIN	Makefile	/^BIN=matcher$/;"	m
+CC	Makefile	/^CC=gcc$/;"	m
+DSK_KEYWORD_FILE	matcher.c	7;"	d	file:
+OBJS	Makefile	/^OBJS=$(patsubst %.c,%.o,$(SRC))$/;"	m
+SRC	Makefile	/^SRC=$(wildcard *$(BIN)*.c)$/;"	m
+__XML_CFG_H___	xmlcfg.h	2;"	d
+_dsk_keyword	matcher.c	/^typedef struct _dsk_keyword$/;"	s	file:
+_dsk_keyword_arr	matcher.c	/^typedef struct _dsk_keyword_arr$/;"	s	file:
+_dsk_keyword_handle	matcher.c	/^typedef struct _dsk_keyword_handle$/;"	s	file:
+_xm_config_list_type_	xmlcfg.h	/^typedef struct _xm_config_list_type_ {$/;"	s
+_xml_config_type_	xmlcfg.h	/^typedef struct _xml_config_type_ {$/;"	s
+_xml_config_type_type_	xmlcfg.h	/^typedef enum _xml_config_type_type_ {$/;"	g
+add_dsk_keyword	matcher.c	/^int32_t add_dsk_keyword(void* handle_p)$/;"	f
+arr	matcher.c	/^	dsk_keyword_t *arr;$/;"	m	struct:_dsk_keyword_arr	file:
+back_index	matcher.c	/^	int32_t		back_index;$/;"	m	struct:_dsk_keyword_handle	file:
+create_dsk_keyword_handle	matcher.c	/^void* create_dsk_keyword_handle()$/;"	f
+doc	xmlcfg.h	/^    xmlDocPtr doc;$/;"	m	struct:_xml_config_type_
+dsk_keyword_arr_t	matcher.c	/^}dsk_keyword_arr_t;$/;"	t	typeref:struct:_dsk_keyword_arr	file:
+dsk_keyword_handle	matcher.c	/^dsk_keyword_handle_t* dsk_keyword_handle= NULL;$/;"	v
+dsk_keyword_handle_t	matcher.c	/^}dsk_keyword_handle_t;$/;"	t	typeref:struct:_dsk_keyword_handle	file:
+dsk_keyword_t	matcher.c	/^}dsk_keyword_t;$/;"	t	typeref:struct:_dsk_keyword	file:
+dsk_matcher_content	matcher.c	/^	void*       dsk_matcher_content;$/;"	m	struct:_dsk_keyword_handle	file:
+dsk_matcher_user	matcher.c	/^	void*		dsk_matcher_user;$/;"	m	struct:_dsk_keyword_handle	file:
+filename	xmlcfg.h	/^    char filename[512];$/;"	m	struct:_xml_config_type_
+keyword_num	matcher.c	/^	size_t			keyword_num;$/;"	m	struct:_dsk_keyword_arr	file:
+keyword_num	matcher.c	/^	size_t		keyword_num;$/;"	m	struct:_dsk_keyword_handle	file:
+main	matcher.c	/^int main(int argc,char* argv[])$/;"	f
+nodes	xmlcfg.h	/^    xmlNodeSetPtr nodes;$/;"	m	struct:_xm_config_list_type_
+pz_id	matcher.c	/^	size_t pz_id;$/;"	m	struct:_dsk_keyword	file:
+search_user_keyword	matcher.c	/^int32_t search_user_keyword(char* data)$/;"	f
+type	xmlcfg.h	/^    xmlcfg_type_t  type;$/;"	m	struct:_xml_config_type_
+used_index	matcher.c	/^	int32_t		used_index;$/;"	m	struct:_dsk_keyword_handle	file:
+user_keyword_arr	matcher.c	/^	dsk_keyword_t user_keyword_arr[10];$/;"	m	struct:_dsk_keyword_handle	file:
+word	matcher.c	/^	uint8_t word[256];$/;"	m	struct:_dsk_keyword	file:
+word_id	matcher.c	/^	size_t word_id;$/;"	m	struct:_dsk_keyword	file:
+xmlbuf	xmlcfg.h	/^    char *xmlbuf;$/;"	m	struct:_xml_config_type_
+xmlbuf_len	xmlcfg.h	/^    int  xmlbuf_len;$/;"	m	struct:_xml_config_type_
+xmlcfg_buff	xmlcfg.h	/^    xmlcfg_buff$/;"	e	enum:_xml_config_type_type_
+xmlcfg_file	xmlcfg.h	/^    xmlcfg_file,$/;"	e	enum:_xml_config_type_type_
+xmlcfg_list_t	xmlcfg.h	/^}xmlcfg_list_t ;$/;"	t	typeref:struct:_xm_config_list_type_
+xmlcfg_t	xmlcfg.h	/^}xmlcfg_t;$/;"	t	typeref:struct:_xml_config_type_
+xmlcfg_type_t	xmlcfg.h	/^}xmlcfg_type_t;$/;"	t	typeref:enum:_xml_config_type_type_
+xpathCtx	xmlcfg.h	/^    xmlXPathContextPtr xpathCtx;$/;"	m	struct:_xml_config_type_
+xpathObj	xmlcfg.h	/^    xmlXPathObjectPtr xpathObj;$/;"	m	struct:_xm_config_list_type_
+xpathObj	xmlcfg.h	/^    xmlXPathObjectPtr xpathObj;$/;"	m	struct:_xml_config_type_

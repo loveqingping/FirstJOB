@@ -1,0 +1,120 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.8	//
+APP_PORT	mystack.c	2;"	d	file:
+BIN	Makefile	/^BIN=mystack$/;"	m
+C2S_DATA	mystack.h	14;"	d
+CC	Makefile	/^CC=gcc$/;"	m
+CFLAGS	Makefile	/^CFLAGS=-g -Wall$/;"	m
+HTTP_CONTENT_LENGTH_FINISH	http_session.h	5;"	d
+HTTP_SESSION_H	http_session.h	2;"	d
+HTTP_URL_FINISH	http_session.h	4;"	d
+LDFLAGS	Makefile	/^LDFLAGS=-lpcap$/;"	m
+MODE_CAPT	pcap.h	241;"	d
+MODE_MON	pcap.h	243;"	d
+MODE_STAT	pcap.h	242;"	d
+MY_STACK_H	mystack.h	2;"	d
+NODE_H	node.h	2;"	d
+OBJS	Makefile	/^OBJS=$(patsubst %.c,%.o,$(SRC))$/;"	m
+PCAP_ERRBUF_SIZE	pcap.h	60;"	d
+PCAP_IF_LOOPBACK	pcap.h	154;"	d
+PCAP_VERSION_MAJOR	pcap.h	57;"	d
+PCAP_VERSION_MINOR	pcap.h	58;"	d
+S2C_DATA	mystack.h	15;"	d
+SRC	Makefile	/^SRC=$(wildcard *.c)$/;"	m
+USER_SESSION_H	user_session.h	2;"	d
+_http_session	http_session.h	/^typedef struct _http_session$/;"	s
+_tcp_stream	mystack.h	/^typedef struct _tcp_stream$/;"	s
+_tuple5	node.h	/^typedef struct _tuple5$/;"	s
+_user_session	user_session.h	/^typedef struct _user_session$/;"	s
+_user_session_pool	user_session.h	/^typedef struct _user_session_pool$/;"	s
+addr	pcap.h	/^	struct sockaddr *addr;		\/* address *\/$/;"	m	struct:pcap_addr	typeref:struct:pcap_addr::sockaddr
+addresses	pcap.h	/^	struct pcap_addr *addresses;$/;"	m	struct:pcap_if	typeref:struct:pcap_if::pcap_addr
+bpf_int32	pcap.h	/^typedef	int bpf_int32;$/;"	t
+bpf_u_int32	pcap.h	/^typedef	u_int bpf_u_int32;$/;"	t
+broadaddr	pcap.h	/^	struct sockaddr *broadaddr;	\/* broadcast address for that address *\/$/;"	m	struct:pcap_addr	typeref:struct:pcap_addr::sockaddr
+bs_capt	pcap.h	/^	u_int bs_capt;		\/* number of packets that reach the application *\/$/;"	m	struct:pcap_stat
+caplen	pcap.h	/^	bpf_u_int32 caplen;	\/* length of portion present *\/$/;"	m	struct:pcap_pkthdr
+content_length	http_session.h	/^	uint32_t content_length;$/;"	m	struct:_http_session
+daddr	node.h	/^		uint32_t daddr;$/;"	m	struct:_tuple5
+description	pcap.h	/^	char *description;	\/* textual description of interface, or NULL *\/$/;"	m	struct:pcap_if
+dest	node.h	/^		uint16_t dest;$/;"	m	struct:_tuple5
+dstaddr	pcap.h	/^	struct sockaddr *dstaddr;	\/* P2P destination address for that address *\/$/;"	m	struct:pcap_addr	typeref:struct:pcap_addr::sockaddr
+flag	mystack.h	/^	int flag;$/;"	m	struct:_tcp_stream
+flags	pcap.h	/^	bpf_u_int32 flags;	\/* PCAP_IF_ interface flags *\/$/;"	m	struct:pcap_if
+free	node.h	/^	node* free;$/;"	m	struct:node_pool
+free	user_session.h	/^	user_session_t* free;$/;"	m	struct:_user_session_pool
+free_count	node.h	/^	uint32_t free_count;$/;"	m	struct:node_pool
+free_count	user_session.h	/^	int free_count;$/;"	m	struct:_user_session_pool
+http_session_malloc	http_session.c	/^http_session_t*  http_session_malloc()$/;"	f
+http_session_t	http_session.h	/^}http_session_t;$/;"	t	typeref:struct:_http_session
+key	node.h	/^	tuple5 key;$/;"	m	struct:node
+len	pcap.h	/^	bpf_u_int32 len;	\/* length this packet (off wire) *\/$/;"	m	struct:pcap_pkthdr
+lib_pcap_h	pcap.h	38;"	d
+linktype	pcap.h	/^	bpf_u_int32 linktype;	\/* data link type (LINKTYPE_*) *\/$/;"	m	struct:pcap_file_header
+magic	pcap.h	/^	bpf_u_int32 magic;$/;"	m	struct:pcap_file_header
+main	main.c	/^int main(int argc,char* argv[])$/;"	f
+name	pcap.h	/^	char *name;		\/* name to hand to "pcap_open_live()" *\/$/;"	m	struct:pcap_if
+netmask	pcap.h	/^	struct sockaddr *netmask;	\/* netmask for that address *\/$/;"	m	struct:pcap_addr	typeref:struct:pcap_addr::sockaddr
+next	node.h	/^	struct node* next;$/;"	m	struct:node	typeref:struct:node::node
+next	pcap.h	/^	struct pcap_addr *next;$/;"	m	struct:pcap_addr	typeref:struct:pcap_addr::pcap_addr
+next	pcap.h	/^	struct pcap_if *next;$/;"	m	struct:pcap_if	typeref:struct:pcap_if::pcap_if
+next	user_session.h	/^	struct _user_session* next;$/;"	m	struct:_user_session	typeref:struct:_user_session::_user_session
+node	node.h	/^typedef struct node    \/\/五元组$/;"	s
+node	node.h	/^}node;$/;"	t	typeref:struct:node
+node_pool	node.h	/^typedef struct node_pool$/;"	s
+node_pool	node.h	/^}node_pool;$/;"	t	typeref:struct:node_pool
+node_pool_create_list	node.c	/^int node_pool_create_list(node_pool* pool, int num)$/;"	f
+node_pool_find	node.c	/^node* node_pool_find(node_pool* pool, tuple5* p)$/;"	f
+node_pool_get	node.c	/^node* node_pool_get(node_pool* pool)$/;"	f
+node_pool_init	node.c	/^int node_pool_init(node** head)$/;"	f
+node_pool_return	node.c	/^int node_pool_return(node_pool* pool, node* p)$/;"	f
+pcap_addr	pcap.h	/^struct pcap_addr {$/;"	s
+pcap_addr_t	pcap.h	/^typedef struct pcap_addr pcap_addr_t;$/;"	t	typeref:struct:pcap_addr
+pcap_dumper_t	pcap.h	/^typedef struct pcap_dumper pcap_dumper_t;$/;"	t	typeref:struct:pcap_dumper
+pcap_file_header	pcap.h	/^struct pcap_file_header {$/;"	s
+pcap_handler	pcap.h	/^typedef void (*pcap_handler)(u_char *, const struct pcap_pkthdr *,$/;"	t
+pcap_if	pcap.h	/^struct pcap_if {$/;"	s
+pcap_if_t	pcap.h	/^typedef struct pcap_if pcap_if_t;$/;"	t	typeref:struct:pcap_if
+pcap_pkthdr	pcap.h	/^struct pcap_pkthdr {$/;"	s
+pcap_stat	pcap.h	/^struct pcap_stat {$/;"	s
+pcap_t	pcap.h	/^typedef struct pcap pcap_t;$/;"	t	typeref:struct:pcap
+pos	http_session.h	/^	int pos;$/;"	m	struct:_http_session
+protocol	node.h	/^		uint32_t protocol;$/;"	m	struct:_tuple5
+ps_drop	pcap.h	/^	u_int ps_drop;		\/* number of packets dropped *\/$/;"	m	struct:pcap_stat
+ps_ifdrop	pcap.h	/^	u_int ps_ifdrop;	\/* drops by interface XXX not yet supported *\/$/;"	m	struct:pcap_stat
+ps_recv	pcap.h	/^	u_int ps_recv;		\/* number of packets received *\/$/;"	m	struct:pcap_stat
+saddr	node.h	/^		uint32_t saddr;$/;"	m	struct:_tuple5
+self	user_session.h	/^	void* self;   \/\/挂载用户自己的定义的session$/;"	m	struct:_user_session
+sigfigs	pcap.h	/^	bpf_u_int32 sigfigs;	\/* accuracy of timestamps *\/$/;"	m	struct:pcap_file_header
+snaplen	pcap.h	/^	bpf_u_int32 snaplen;	\/* max length saved portion of each pkt *\/$/;"	m	struct:pcap_file_header
+source	node.h	/^		uint16_t source;$/;"	m	struct:_tuple5
+stack_run	mystack.c	/^int stack_run(char* net_interface, node_pool* pool, user_session_pool* us, tcp_callback tcp_cb)$/;"	f
+tcp_callback	mystack.h	/^typedef int (*tcp_callback) (tcp_stream_t* ts,void** pme);$/;"	t
+tcp_read	main.c	/^int tcp_read(tcp_stream_t* ts,void**pme)$/;"	f
+tcp_stream_t	mystack.h	/^}tcp_stream_t;$/;"	t	typeref:struct:_tcp_stream
+thiszone	pcap.h	/^	bpf_int32 thiszone;	\/* gmt to local correction *\/$/;"	m	struct:pcap_file_header
+toclient	mystack.h	/^	char toclient[2048];$/;"	m	struct:_tcp_stream
+toclient_len	mystack.h	/^	uint32_t toclient_len;$/;"	m	struct:_tcp_stream
+toserver	mystack.h	/^	char toserver[2048];$/;"	m	struct:_tcp_stream
+toserver_len	mystack.h	/^	uint32_t toserver_len;$/;"	m	struct:_tcp_stream
+ts	pcap.h	/^	struct timeval ts;	\/* time stamp *\/$/;"	m	struct:pcap_pkthdr	typeref:struct:pcap_pkthdr::timeval
+tuple5	node.h	/^}tuple5;$/;"	t	typeref:struct:_tuple5
+tuple5_if_eq	node.c	/^static int tuple5_if_eq(tuple5* p1,tuple5* p2)$/;"	f	file:
+url	http_session.h	/^	char url[256];$/;"	m	struct:_http_session
+used	node.h	/^	node* used;$/;"	m	struct:node_pool
+used	user_session.h	/^	user_session_t* used;$/;"	m	struct:_user_session_pool
+used_count	node.h	/^	uint32_t used_count;$/;"	m	struct:node_pool
+used_count	user_session.h	/^	int used_count;$/;"	m	struct:_user_session_pool
+user_session	node.h	/^	user_session_t* user_session;$/;"	m	struct:node
+user_session_pool	user_session.h	/^}user_session_pool;$/;"	t	typeref:struct:_user_session_pool
+user_session_pool_createlist	user_session.c	/^int user_session_pool_createlist(user_session_pool* pool ,int num)$/;"	f
+user_session_pool_get	user_session.c	/^user_session_t* user_session_pool_get(user_session_pool* pool)$/;"	f
+user_session_pool_init	user_session.c	/^int user_session_pool_init(user_session_t** head)$/;"	f
+user_session_pool_return	user_session.c	/^int user_session_pool_return(user_session_pool* pool,user_session_t* session)$/;"	f
+user_session_t	user_session.h	/^}user_session_t;$/;"	t	typeref:struct:_user_session
+version_major	pcap.h	/^	u_short version_major;$/;"	m	struct:pcap_file_header
+version_minor	pcap.h	/^	u_short version_minor;$/;"	m	struct:pcap_file_header
